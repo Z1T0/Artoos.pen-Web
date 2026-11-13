@@ -1,0 +1,14 @@
+# Arquivos brutos (vídeos e fotos originais, sem compressão) — ficam só local
+raw_files/
+
+# Referências baixadas de sites de terceiros — não vão para o repositório
+templates/
+
+# Configuração local do editor
+*.code-workspace
+.vscode/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
