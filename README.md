@@ -1,6 +1,6 @@
-# Artools · Precision Pen
+# Artools · Pigmentum
 
-Landing page de produto para a caneta **Artools Precision Pen**, com animação de vídeo controlada pelo scroll.
+Landing page de produto para a caneta **Artools Pigmentum**, com animação de vídeo controlada pelo scroll.
 
 ## Destaques
 
