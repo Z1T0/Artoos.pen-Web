@@ -1,28 +1,34 @@
 # Artools · Pigmentum
 
-Landing page de produto para a caneta **Artools Pigmentum**, com animação de vídeo controlada pelo scroll.
+Landing page de produto para a caneta Artools Pigmentum. O vídeo do topo avança conforme a pessoa rola a página, e o modo técnico mostra as peças internas da caneta com medidas.
 
-## Destaques
+![Capa do projeto Artools Pigmentum](.github/capa.webp)
 
-- **Hero com scroll-scrubbing**: os frames do vídeo são extraídos para um `<canvas>` e avançam conforme a rolagem (GSAP + ScrollTrigger), evitando os travamentos de buscar `video.currentTime` a cada evento.
-- **Seções com animação de entrada** e vídeo em loop na seção de fluxo.
-- **Design system** documentado em `design_system.html` (cores, tipografia, componentes).
-- Página estática: sem build, sem dependências locais.
+## Links
+
+| | |
+| --- | --- |
+| Site | https://portfoliozitomenezes.vercel.app/artools/ |
+| Estudo de caso | https://portfoliozitomenezes.vercel.app/estudo-de-caso-artools.html |
+
+## Sobre o projeto
+
+Os frames do vídeo do topo são desenhados num `<canvas>` e avançam com a rolagem (GSAP e ScrollTrigger). Assim a página não precisa buscar `video.currentTime` a cada evento de scroll, que é o que costuma travar esse tipo de animação. As seções seguintes entram com animação, e a seção de fluxo tem um vídeo em loop. O design system da página está documentado em `design_system.html`.
 
 ## Estrutura
 
 ```
 .
-├── index.html            # Landing page
-├── design_system.html    # Guia de estilo / design system
+├── index.html                # Landing page
+├── design_system.html        # Cores, tipografia e componentes
 └── assets/
-    ├── video/            # hero.mp4 (scroll do hero) · flow.mp4 (seção de fluxo)
-    └── ds/               # Fontes (Inter) e imagens do design system
+    ├── video/                # hero.mp4 (scroll do topo) e flow.mp4 (seção de fluxo)
+    └── ds/                   # Fontes (Inter) e imagens do design system
 ```
 
 ## Como rodar
 
-Abra `index.html` direto no navegador ou sirva a pasta localmente (recomendado, por causa dos vídeos):
+Não tem build nem dependências. Sirva a pasta (os vídeos não carregam direito abrindo o arquivo direto):
 
 ```bash
 npx serve .
@@ -30,6 +36,18 @@ npx serve .
 python -m http.server 8000
 ```
 
-## Tecnologias
+A versão publicada fica na pasta `artools/` do repositório do portfólio.
 
-HTML · Tailwind CSS (CDN) · GSAP + ScrollTrigger · Iconify
+## Ferramentas
+
+HTML, Tailwind CSS, GSAP com ScrollTrigger e Iconify. Claude ajudou no código e nos textos.
+
+## Status
+
+Publicado como parte do portfólio. Ainda não passou por teste com usuários.
+
+## Autor
+
+Antonio Zito · [Portfólio](https://portfoliozitomenezes.vercel.app) · [LinkedIn](https://www.linkedin.com/in/antonio-zito-4b64b71b0) · [Behance](https://www.behance.net/antoniozitome)
+
+© 2026 Antonio Zito. O código pode ser consultado; textos, imagens e marca não podem ser reutilizados sem autorização.
